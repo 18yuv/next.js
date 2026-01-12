@@ -31,6 +31,7 @@ Declaring types
 let id:number = 5;
 let name:string = "Hello world";
 let isuploaded:boolean = true;
+let date:Date = new Date() // date must be a Date object
 
 // any only in extreme scenarios
 let x: any = "pedro" // true, 1 
@@ -174,4 +175,33 @@ const moneyCount = new StorageContainer<number> ();
 moneyCount.addItem(26)
 moneyCount.addItem(67)
 moneyCount.getItem(1) // 67
+
+
+// another example
+function identity<T>(value: T): T {
+  return value;
+}
+```
+
+### Read only variables
+Fields that should'nt be changed
+
+```ts
+interface SomeWorkingGuy{
+    readonly guyId:number;
+    readonly startDate:Date;
+
+    name:string;
+    workingFeild:string;
+}
+
+const workingGuy:SomeWorkingGuy =  {
+    guyId:10,
+    startDate: new Date(),
+
+    name:"pedro",
+    workingFeild:"CS"
+}
+
+workingGuy.guyId = 15 // error
 ```

@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 let id = 5;
 let name = "Hello world";
 let isuploaded = true;
+let date = new Date(); // date must be a Date object
 // any only in extreme scenarios
 let x = "pedro"; // true, 1 
 // arrays
@@ -79,5 +80,13 @@ usernames.getItem(1); // 18yuv github
 const moneyCount = new StorageContainer();
 moneyCount.addItem(26);
 moneyCount.addItem(67);
-console.log(moneyCount.getItem(1));
+moneyCount.getItem(1); // 67
+const workingGuy = {
+    guyId: 10,
+    startDate: new Date(),
+    name: "pedro",
+    workingFeild: "CS"
+};
+workingGuy.guyId = 15; // error
+console.log(workingGuy.guyId); // 15
 //# sourceMappingURL=index.js.map
