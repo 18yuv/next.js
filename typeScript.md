@@ -206,6 +206,12 @@ const workingGuy:SomeWorkingGuy =  {
 workingGuy.guyId = 15 // error
 ```
 
+
+
+(Nutshell over, now in depth)
+
+
+
 ### type inference 
 when TS figures out types automatically
 
