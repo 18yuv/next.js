@@ -149,3 +149,41 @@ const workingGuy:SomeWorkingGuy =  {
 }
 
 // workingGuy.guyId = 15 // error
+
+
+
+
+// question
+// function sendEmail(
+//   to?: string,
+//   subject: string,
+//   urgent?: boolean
+// ) {
+//   if (urgent) {
+//     console.log("URGENT:", subject);
+//   }
+// }
+
+// sol
+// function sendEmail(
+//     subject: string,
+//     to?: string,
+//     urgent: boolean = false
+// ) {
+//   if (urgent) {
+//     console.log("URGENT:", subject);
+//   }
+// }
+
+// overload
+function analyze(input: string):number;
+function analyze(input: number):boolean;
+
+function analyze(input : string | number){
+    if(typeof input === "string"){
+        return Number(input)
+    } else {
+        return Boolean(input)
+    }
+}
+
