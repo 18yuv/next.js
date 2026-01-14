@@ -186,4 +186,3 @@ function analyze(input : string | number){
         return Boolean(input)
     }
 }
-

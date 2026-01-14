@@ -453,5 +453,3 @@ What this means:
 task is a function
 It takes no parameters
 It returns nothing (void)
-
-!continue from callbacks (https://chatgpt.com/c/6964e088-39b4-8323-831d-b3e29e64730f) typescipt learning roadmap
